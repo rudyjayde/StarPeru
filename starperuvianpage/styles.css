@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+
+
+body {
+  font-size: 25px;
+  line-height: 1.5; 
+  color: #111;
+}
+
+button,
+.nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+
+.offers {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+
+
+/*  new  OJO */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+
+body {
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #f6f6f6;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+
+.top-links span {
+    margin-right: 15px;
+}
+
+
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1200px;   /* CLAVE */
+    margin: 0 auto;     /* CLAVE */
+    padding: 20px 40px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.icons span {
+    margin-left: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    
+    align-items: center;
+    gap: 30px;
+
+
+
+   
+    background: #fafafa;
+}
+
+.search-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+}
+
+
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.promo {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #b00000;
+}
+
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+    width: 100%;              /* 🔥 NO 100vw */
+    height: 680px;
+
+    background-image: url("img/Dorado\ Negro\ Moderno\ Clásico\ Borde\ Marco\ Blog\ Banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Título principal */
+.hero-content h1 {
+    font-size: 70px; 
+    /* Tamaño del texto del título */
+
+    margin-bottom: 10px; 
+    /* Espacio debajo del título */
+}
+
+
+/* Texto descriptivo */
+.hero-content p {
+    font-size: 25px; 
+    /* Tamaño del texto del párrafo */
+
+    margin-bottom: 10px; 
+    /* Espacio debajo del párrafo */
+}
+
+
+/* Texto destacado (descuento) */
+.hero-content strong {
+    display: block; 
+    /* Hace que el strong ocupe toda la línea */
+
+    margin: 15px 0; 
+    /* Espacio arriba y abajo del texto destacado */
+}
+
+
+/* Botón */
+.btn {
+    display: inline-block; 
+    /* Permite aplicar padding y dimensiones */
+
+    padding: 12px 25px; 
+    /* Espacio interno del botón */
+
+    border: 1px solid #000; 
+    /* Borde negro */
+
+    color: #000; 
+    /* Color del texto */
+
+    text-decoration: none; 
+    /* Elimina el subrayado del enlace */
+
+    font-weight: bold; 
+    /* Texto en negrita */
+}
+
+
+/* Efecto hover del botón */
+.btn:hover {
+    background: #000; 
+    /* Fondo negro al pasar el mouse */
+
+    color: #fff; 
+    /* Texto blanco al pasar el mouse */
+}
+
+
+/* FLOATING PRODUCTS */
+.float {
+    position: absolute;
+    width: 140px;
+}
+
+.product1 {
+    bottom: 40px;
+    left: 35%;
+}
+
+.product2 {
+    bottom: 40px;
+    right: 35%;
+}
+
+
+
+
+/* OFERTAS */
+.offers {
+    padding: 60px 40px;
+    background: #ffffff;
+}
+
+.offers h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    position: relative;
+    background: #fff;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+
+
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.stock {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.product-card h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.model {
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.category {
+    font-size: 12px;
+    color: #777;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.current {
+    color: #b00000;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.old {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+
+
+/* MARCAS */
+.brands {
+    padding: 60px 40px;
+    background: #ffffff;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+/* BRAND CARD   MARCASSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+.brand-card {
+    background: #f7f7f7;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.brand-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+.brand-card a {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.brand-card a:hover {
+    font-weight: bold;
+}
+
+/* MARCAS */
+.brands {
+    padding: 60px 40px;
+    background: #ffffff;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background: #f3f3f3;
+    padding: 60px 0px 30px;
+    font-size: 13px;
+    color: #000;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* FEEDBACK BOX */
+.footer-feedback {
+    border: 1px solid #bbb;
+    padding: 15px;
+    max-width: 220px;
+}
+
+.footer-feedback a {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* MIDDLE LINKS */
+.footer-middle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer-middle a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-middle a:hover {
+    text-decoration: underline;
+}
+
+/* PAYMENTS */
+.footer-payments {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-payments img {
+    height: 26px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-note {
+    margin-top: 5px;
+    color: #555;
+}
+
+
+.site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+
+.brands {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+/* ESTO ES DE MARCAS */
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+
