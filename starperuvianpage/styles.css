@@ -542,3 +542,30 @@ section {
 .product-img:hover::after {
   opacity: 1;
 }
+.sizes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.sizes span {
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.sizes span:hover {
+    border-color: #000;
+}
+
+/* ESTA ES LA CLAVE */
+.sizes span.selected {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
