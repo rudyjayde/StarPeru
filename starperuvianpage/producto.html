@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto | AESTHETIC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para emular la vista de Saga Falabella */
+        .product-detail-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding: 40px 0;
+        }
+        .product-gallery {
+            display: flex;
+            gap: 15px;
+        }
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .thumbnails img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            object-fit: cover;
+        }
+        .main-image img {
+            width: 100%;
+            border: 1px solid #eee;
+        }
+        .product-info h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .sku {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .price-section {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .price-big {
+            font-size: 32px;
+            color: #b00000;
+            font-weight: bold;
+        }
+        .selector-section {
+            margin-bottom: 25px;
+        }
+        .selector-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .btn-add-cart {
+            background: #333f48;
+            color: white;
+            width: 100%;
+            padding: 18px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-add-cart:hover {
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="product-detail-container">
+            <div class="product-gallery">
+                <div class="thumbnails">
+                    <img src="img/LindaLunapingpong.png" alt="mini">
+                    <img src="img/LindaLunapingpong.png" alt="mini">
+                </div>
+                <div class="main-image">
+                    <img src="img/LindaLunapingpong.png" alt="Producto Principal">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <p class="brand">LINDA LUNA</p>
+                <h1>Formador Linda Luna - Lyla</h1>
+                <p class="sku">Código: 142289077</p>
+                
+                <div class="price-section">
+                    <span class="price-big">S/ 35.97</span>
+                    <p style="text-decoration: line-through; color: #777;">S/ 200.00</p>
+                </div>
+
+                <div class="selector-section">
+                    <h3>Selecciona tu Talla</h3>
+                    <div class="sizes">
+                        <span class="size-box">S</span>
+                        <span class="size-box">M</span>
+                        <span class="size-box">L</span>
+                    </div>
+                </div>
+
+                <button class="btn-add-cart">Agregar al Carro</button>
+                
+                <div style="margin-top: 20px; font-size: 14px; color: #444;">
+                    <p>🚚 Despacho a domicilio disponible</p>
+                    <p>🏢 Retiro en tienda gratis</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    </body>
+</html>
