@@ -569,3 +569,59 @@ section {
     color: #fff;
     border-color: #000;
 }
+/* ICONOS PEQUEÑOS DE LA PARTE SUPERIOR */
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Botón contenedor */
+.icon-btn{
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+
+/* Imagen del ícono */
+.icon-img{
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+  opacity: 0.9;
+}
+
+.icon-btn:hover .icon-img{
+  opacity: 1;
+  transform: scale(1.05);
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+/* Badge del carrito (contador) */
+.icon-badge{
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #b00000;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
